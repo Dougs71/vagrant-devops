@@ -49,14 +49,17 @@ pip install docker-compose
 # Terraform
 wget -q https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
 unzip -e terraform_0.11.13_linux_amd64.zip
+rm -f terraform_0.11.13_linux_amd64.zip
 mv terraform /usr/local/bin/
 
 # Packer
 wget -q https://releases.hashicorp.com/packer/1.3.5/packer_1.3.5_linux_amd64.zip
 unzip -e packer_1.3.5_linux_amd64.zip
+rm -f packer_1.3.5_linux_amd64.zip
 mv packer /usr/local/bin/
 
 # Vault
 wget -q https://releases.hashicorp.com/vault/1.1.1/vault_1.1.1_linux_amd64.zip
 unzip -e vault_1.1.1_linux_amd64.zip
+rm -f vault_1.1.1_linux_amd64.zip
 mv vault /usr/local/bin/
