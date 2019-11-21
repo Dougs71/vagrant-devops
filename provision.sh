@@ -47,7 +47,7 @@ yum upgrade python*
 pip install docker-compose
 
 # Terraform
-wget -q https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
+wget -q https://releases.hashicorp.com/terraform/0.12.16/terraform_0.12.16_linux_amd64.zip
 unzip -e terraform_0.11.13_linux_amd64.zip
 rm -f terraform_0.11.13_linux_amd64.zip
 mv terraform /usr/local/bin/
