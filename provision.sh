@@ -28,7 +28,7 @@ EOF
 yum install -y kubectl
 
 # Kops
-wget -q https://github.com/kubernetes/kops/releases/download/1.11.1/kops-linux-amd64
+wget -q https://github.com/kubernetes/kops/releases/download/1.17.0/kops-linux-amd64
 chmod +x kops-linux-amd64
 mv kops-linux-amd64 /usr/local/bin/kops
 chmod +x /usr/local/bin/kops
@@ -47,19 +47,19 @@ yum upgrade python*
 pip install docker-compose
 
 # Terraform
-wget -q https://releases.hashicorp.com/terraform/0.12.16/terraform_0.12.16_linux_amd64.zip
-unzip -e terraform_0.11.13_linux_amd64.zip
-rm -f terraform_0.11.13_linux_amd64.zip
+wget -q https://releases.hashicorp.com/terraform/0.12.28/terraform_0.12.28_linux_amd64.zip
+unzip -e terraform_0.12.28_linux_amd64.zip
+rm -f terraform_0.12.28_linux_amd64.zip
 mv terraform /usr/local/bin/
 
 # Packer
-wget -q https://releases.hashicorp.com/packer/1.3.5/packer_1.3.5_linux_amd64.zip
-unzip -e packer_1.3.5_linux_amd64.zip
-rm -f packer_1.3.5_linux_amd64.zip
+wget -q https://releases.hashicorp.com/packer/1.6.0/packer_1.6.0_linux_amd64.zip
+unzip -e packer_1.6.0_linux_amd64.zip
+rm -f packer_1.6.0_linux_amd64.zip
 mv packer /usr/local/bin/
 
 # Vault
-wget -q https://releases.hashicorp.com/vault/1.1.1/vault_1.1.1_linux_amd64.zip
-unzip -e vault_1.1.1_linux_amd64.zip
-rm -f vault_1.1.1_linux_amd64.zip
+wget -q https://releases.hashicorp.com/vault/1.4.2/vault_1.4.2_linux_amd64.zip
+unzip -e vault_1.4.2_linux_amd64.zip
+rm -f vault_1.4.2_linux_amd64.zip
 mv vault /usr/local/bin/
